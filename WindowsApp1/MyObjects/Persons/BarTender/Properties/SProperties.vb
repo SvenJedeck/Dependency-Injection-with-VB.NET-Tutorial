@@ -5,14 +5,8 @@
         Implements IProperties
 
         Public Property Name As String Implements Persons.IProperties.Name
-            Get
-                Return _name
-            End Get
-            Set(value As String)
-                _name = value
-            End Set
-        End Property
-            Private _name As String
+
+        Public Property BirthDay As Date Implements Persons.IProperties.BirthDay
 
     End Class
 

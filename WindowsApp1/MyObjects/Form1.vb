@@ -36,6 +36,8 @@ Imports VisitorDrinks = MyObjects.Persons.Visitor.ITalk.Drinks
             ThisBarTender.Moving.GoToBehindCounter
             ThisBarTender.Properties.Name = "John Doe"
             MessageBox.Show("Bartender Name: " &   ThisBarTender.Properties.Name)
+            ThisBarTender.Properties.BirthDay = Now
+            MessageBox.Show("Bartender Birthday: " &   ThisBarTender.Properties.BirthDay)
         End Sub
 
         Private Sub BtnVisitorOrder_Click(sender As Object, e As EventArgs) Handles BtnVisitorOrderBeer.Click

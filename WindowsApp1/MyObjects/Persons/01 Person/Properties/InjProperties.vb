@@ -1,4 +1,4 @@
-﻿Namespace MyObjects.Persons.BarTender
+﻿Namespace MyObjects.Persons
 
     Public Class InjProperties
 

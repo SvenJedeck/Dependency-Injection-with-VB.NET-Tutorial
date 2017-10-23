@@ -73,6 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MyObjects\Persons\01 Person\Properties\InjProperties.vb" />
     <Compile Include="MyObjects\Persons\BarTender\Properties\InjProperties.vb" />
     <Compile Include="MyObjects\Persons\BarTender\Properties\IProperties.vb" />
     <Compile Include="MyObjects\Persons\BarTender\Properties\SProperties.vb" />
@@ -109,7 +110,7 @@
     </Compile>
     <Compile Include="MyObjects\Persons\BarTender\Functions and Methods\Talking\STalk.vb" />
     <Compile Include="MyObjects\Persons\BarTender\Functions and Methods\Moving\IMove.vb" />
-    <Compile Include="MyObjects\Persons\SProperties.vb" />
+    <Compile Include="MyObjects\Persons\01 Person\Properties\SProperties.vb" />
     <Compile Include="MyObjects\Persons\Visitor\Functions and Methods\Moving\IMove.vb" />
     <Compile Include="MyObjects\Persons\Visitor\Functions and Methods\Talking\ITalk.vb" />
     <Compile Include="MyObjects\Persons\Visitor\Functions and Methods\Moving\SMove.vb" />
@@ -143,6 +144,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="MyObjects\Persons\01 Person\Functions and Methods\" />
+    <Folder Include="MyObjects\Persons\Gambler\Functions and Methods\" />
+    <Folder Include="MyObjects\Persons\Gambler\Properties\" />
     <Folder Include="MyObjects\Persons\Visitor\Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
