@@ -6,8 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2EFF8AA3-5334-48BD-AD92-CD0E192D713B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>WindowsApp1.My.MyApplication</StartupObject>
-    <RootNamespace>WindowsApp1</RootNamespace>
+    <StartupObject>My.MyApplication</StartupObject>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>WindowsApp1</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
@@ -72,15 +73,25 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="MyObjects\Persons\BarTender\Properties\InjProperties.vb" />
+    <Compile Include="MyObjects\Persons\BarTender\Properties\IProperties.vb" />
+    <Compile Include="MyObjects\Persons\BarTender\Properties\SProperties.vb" />
+    <Compile Include="MyObjects\Persons\BarTender\BarTender.vb" />
+    <Compile Include="MyObjects\Persons\BarTender\Functions and Methods\Moving\Moving.vb" />
+    <Compile Include="MyObjects\Persons\BarTender\Functions and Methods\Talking\Talking.vb" />
+    <Compile Include="MyObjects\Persons\BarTender\Inject.vb" />
+    <Compile Include="MyObjects\Persons\BarTender\Functions and Methods\Talking\ITalk.vb" />
+    <Compile Include="MyObjects\Persons\BarTender\Functions and Methods\Moving\SMove.vb" />
+    <Compile Include="MyObjects\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
+    <Compile Include="MyObjects\Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ISelfAction.vb" />
-    <Compile Include="IOuterAction.vb" />
+    <Compile Include="MyObjects\Persons\IMove.vb" />
+    <Compile Include="MyObjects\Persons\IProperties.vb" />
+    <Compile Include="MyObjects\Persons\ITalk.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -96,8 +107,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="MyObjects\Persons\BarTender\Functions and Methods\Talking\STalk.vb" />
+    <Compile Include="MyObjects\Persons\BarTender\Functions and Methods\Moving\IMove.vb" />
+    <Compile Include="MyObjects\Persons\SProperties.vb" />
+    <Compile Include="MyObjects\Persons\Visitor\Functions and Methods\Moving\IMove.vb" />
+    <Compile Include="MyObjects\Persons\Visitor\Functions and Methods\Talking\ITalk.vb" />
+    <Compile Include="MyObjects\Persons\Visitor\Functions and Methods\Moving\SMove.vb" />
+    <Compile Include="MyObjects\Persons\Visitor\Functions and Methods\Talking\STalk.vb" />
+    <Compile Include="MyObjects\Persons\Visitor\Visitor.vb" />
+    <Compile Include="MyObjects\Persons\Visitor\Functions and Methods\Moving\Moving.vb" />
+    <Compile Include="MyObjects\Persons\Visitor\Functions and Methods\Talking\Talking.vb" />
+    <Compile Include="MyObjects\Persons\Visitor\Inject.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="MyObjects\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -116,6 +141,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MyObjects\Persons\Visitor\Properties\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
