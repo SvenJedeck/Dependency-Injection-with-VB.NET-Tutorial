@@ -1,4 +1,4 @@
-﻿
+﻿Imports MyObjects.Persons
 Imports MyObjects.Persons.BarTender
 Imports MyObjects.Persons.Visitor
 Imports VisitorDrinks = MyObjects.Persons.Visitor.ITalk.Drinks
@@ -7,6 +7,8 @@ Imports VisitorDrinks = MyObjects.Persons.Visitor.ITalk.Drinks
 
         Private ThisBarTender As New BarTender
         Private ThisVisitor As New Visitor
+
+        Private ThisPerson As New Person("Peter", CDate("01.06.2001")) 
 
         Private Sub BtnVisitorHello_Click(sender As Object, e As EventArgs) Handles BtnVisitorHello.Click
             ThisVisitor.Talking.SayHello
@@ -52,7 +54,17 @@ Imports VisitorDrinks = MyObjects.Persons.Visitor.ITalk.Drinks
             ThisVisitor.Talking.Order(VisitorDrinks.BUTTERMILK)
         End Sub
 
-    Private Sub BtnTime_Click(sender As Object, e As EventArgs) Handles BtnTime.Click
-        MessageBox.Show("Visitor: The Bartender told me the time: " &   ThisBarTender.Talking.WhatTimeIsIt)
-    End Sub
-End Class
+        Private Sub BtnTime_Click(sender As Object, e As EventArgs) Handles BtnTime.Click
+            MessageBox.Show("Visitor: The Bartender told me the time: " &   ThisBarTender.Talking.WhatTimeIsIt)
+        End Sub
+
+        Private Sub BtnPerson_Click(sender As Object, e As EventArgs) Handles BtnPerson.Click
+
+            MessageBox.Show("Persons Birthday: " &   ThisPerson.Properties.BirthDay & vbCrLf & _
+                            "Persons Name: " &   ThisPerson.Properties.Name)
+
+            ThisPerson.Moving.GoToToilet(ThisPerson.Properties.Name)
+
+        End Sub
+
+    End Class

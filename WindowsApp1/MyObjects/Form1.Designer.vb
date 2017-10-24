@@ -33,6 +33,7 @@ Partial Class Form1
         Me.BtnVisitorOrderButtermilk = New System.Windows.Forms.Button()
         Me.BtnVisitorOrderWater = New System.Windows.Forms.Button()
         Me.BtnTime = New System.Windows.Forms.Button()
+        Me.BtnPerson = New System.Windows.Forms.Button()
         Me.SuspendLayout
         '
         'BtnVisitorHello
@@ -134,11 +135,21 @@ Partial Class Form1
         Me.BtnTime.Text = "Time"
         Me.BtnTime.UseVisualStyleBackColor = true
         '
+        'BtnPerson
+        '
+        Me.BtnPerson.Location = New System.Drawing.Point(224, 256)
+        Me.BtnPerson.Name = "BtnPerson"
+        Me.BtnPerson.Size = New System.Drawing.Size(144, 23)
+        Me.BtnPerson.TabIndex = 11
+        Me.BtnPerson.Text = "Person"
+        Me.BtnPerson.UseVisualStyleBackColor = true
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(615, 365)
+        Me.Controls.Add(Me.BtnPerson)
         Me.Controls.Add(Me.BtnTime)
         Me.Controls.Add(Me.BtnVisitorOrderWater)
         Me.Controls.Add(Me.BtnVisitorOrderButtermilk)
@@ -167,4 +178,5 @@ End Sub
     Friend WithEvents BtnVisitorOrderButtermilk As Button
     Friend WithEvents BtnVisitorOrderWater As Button
     Friend WithEvents BtnTime As Button
+    Friend WithEvents BtnPerson As Button
 End Class

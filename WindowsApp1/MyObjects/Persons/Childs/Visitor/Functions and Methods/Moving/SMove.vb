@@ -12,6 +12,10 @@
             MsgBox("Visitor is going to the toilet.")
         End Sub
 
+        Public Sub GoToToilet(personName As String) Implements Persons.IMove.GoToToilet
+            MsgBox("Visitor " & personName & " is going to the toilet.")
+        End Sub
+
     End Class
 
 End Namespace
