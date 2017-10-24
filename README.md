@@ -7,4 +7,4 @@ More details coming son. At the moment the inheritance with interfaces and in ad
 Just a moment after 1st init.
 
 ## Inspired 
-Strongly inspired by Obelink 's clear and well - constructed [Repository Part01](https://github.com/obelink/DependencyInjectionVBPart01) on Dependency Injection
+Strongly inspired by [Obelink 's](https://github.com/obelink) clear and well - constructed [Repository Part01](https://github.com/obelink/DependencyInjectionVBPart01) on Dependency Injection
