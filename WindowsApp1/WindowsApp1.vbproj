@@ -6,9 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2EFF8AA3-5334-48BD-AD92-CD0E192D713B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>My.MyApplication</StartupObject>
-    <RootNamespace>
-    </RootNamespace>
+    <StartupObject>WindowsApp1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApp1</RootNamespace>
     <AssemblyName>WindowsApp1</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
@@ -73,32 +72,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyObjects\Persons\Functions and Methods\Moving\Moving.vb" />
-    <Compile Include="MyObjects\Persons\Functions and Methods\Moving\SMove.vb" />
-    <Compile Include="MyObjects\Persons\Functions and Methods\Talking\STalk.vb" />
-    <Compile Include="MyObjects\Persons\Functions and Methods\Talking\Talking.vb" />
-    <Compile Include="MyObjects\Persons\Inject.vb" />
-    <Compile Include="MyObjects\Persons\Person.vb" />
-    <Compile Include="MyObjects\Persons\Properties\InjProperties.vb" />
-    <Compile Include="MyObjects\Persons\Childs\BarTender\Properties\InjProperties.vb" />
-    <Compile Include="MyObjects\Persons\Childs\BarTender\Properties\IProperties.vb" />
-    <Compile Include="MyObjects\Persons\Childs\BarTender\Properties\SProperties.vb" />
-    <Compile Include="MyObjects\Persons\Childs\BarTender\BarTender.vb" />
-    <Compile Include="MyObjects\Persons\Childs\BarTender\Functions and Methods\Moving\Moving.vb" />
-    <Compile Include="MyObjects\Persons\Childs\BarTender\Functions and Methods\Talking\Talking.vb" />
-    <Compile Include="MyObjects\Persons\Childs\BarTender\Inject.vb" />
-    <Compile Include="MyObjects\Persons\Childs\BarTender\Functions and Methods\Talking\ITalk.vb" />
-    <Compile Include="MyObjects\Persons\Childs\BarTender\Functions and Methods\Moving\SMove.vb" />
-    <Compile Include="MyObjects\Form1.vb">
+    <Compile Include="Moving.vb" />
+    <Compile Include="SMove.vb" />
+    <Compile Include="Inject.vb" />
+    <Compile Include="Person.vb" />
+    <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyObjects\Form1.Designer.vb">
+    <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MyObjects\Persons\Functions and Methods\Moving\IMove.vb" />
-    <Compile Include="MyObjects\Persons\Properties\IProperties.vb" />
-    <Compile Include="MyObjects\Persons\Functions and Methods\Talking\ITalk.vb" />
+    <Compile Include="IMove.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -114,20 +99,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="MyObjects\Persons\Childs\BarTender\Functions and Methods\Talking\STalk.vb" />
-    <Compile Include="MyObjects\Persons\Childs\BarTender\Functions and Methods\Moving\IMove.vb" />
-    <Compile Include="MyObjects\Persons\Properties\SProperties.vb" />
-    <Compile Include="MyObjects\Persons\Childs\Visitor\Functions and Methods\Moving\IMove.vb" />
-    <Compile Include="MyObjects\Persons\Childs\Visitor\Functions and Methods\Talking\ITalk.vb" />
-    <Compile Include="MyObjects\Persons\Childs\Visitor\Functions and Methods\Moving\SMove.vb" />
-    <Compile Include="MyObjects\Persons\Childs\Visitor\Functions and Methods\Talking\STalk.vb" />
-    <Compile Include="MyObjects\Persons\Childs\Visitor\Visitor.vb" />
-    <Compile Include="MyObjects\Persons\Childs\Visitor\Functions and Methods\Moving\Moving.vb" />
-    <Compile Include="MyObjects\Persons\Childs\Visitor\Functions and Methods\Talking\Talking.vb" />
-    <Compile Include="MyObjects\Persons\Childs\Visitor\Inject.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MyObjects\Form1.resx">
+    <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -149,10 +123,6 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MyObjects\Persons\Childs\Gambler\Functions and Methods\" />
-    <Folder Include="MyObjects\Persons\Childs\Gambler\Properties\" />
-    <Folder Include="MyObjects\Persons\Childs\Visitor\Properties\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
