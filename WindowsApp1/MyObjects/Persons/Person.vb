@@ -4,8 +4,8 @@
 
         Private      ThisPerson As New  Inject
 
-        'Private    ThisTalking As      ITalk       = ThisPerson.Talk
-        'Public         Talking As New  Talking     ( ThisTalking )
+        Private ThisTalking As ITalk = ThisPerson.Talk
+        Public Talking As New Talking(ThisTalking)
 
         Private ThisMoving As IMove = ThisPerson.Move
         Public Moving As New Moving(ThisMoving)
@@ -21,7 +21,6 @@
                 End Set
             End Property
                     Private _properties As New InjProperties(ThisProperties)
-
 
         Public Sub New(personName As String, birthDay As Date)
 

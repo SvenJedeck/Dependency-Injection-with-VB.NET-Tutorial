@@ -75,6 +75,8 @@
   <ItemGroup>
     <Compile Include="MyObjects\Persons\Functions and Methods\Moving\Moving.vb" />
     <Compile Include="MyObjects\Persons\Functions and Methods\Moving\SMove.vb" />
+    <Compile Include="MyObjects\Persons\Functions and Methods\Talking\STalk.vb" />
+    <Compile Include="MyObjects\Persons\Functions and Methods\Talking\Talking.vb" />
     <Compile Include="MyObjects\Persons\Inject.vb" />
     <Compile Include="MyObjects\Persons\Person.vb" />
     <Compile Include="MyObjects\Persons\Properties\InjProperties.vb" />

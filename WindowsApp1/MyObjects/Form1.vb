@@ -65,6 +65,8 @@ Imports VisitorDrinks = MyObjects.Persons.Visitor.ITalk.Drinks
 
             ThisPerson.Moving.GoToToilet(ThisPerson.Properties.Name)
 
+            ThisPerson.Talking.SayHello
+
         End Sub
 
     End Class

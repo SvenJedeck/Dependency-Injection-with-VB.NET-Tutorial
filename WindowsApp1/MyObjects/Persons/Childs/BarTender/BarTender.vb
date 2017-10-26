@@ -2,25 +2,20 @@
 
     Public Class BarTender
 
-        Private      ThisBarTender As New  Inject
+        ' Himself
+        Private  ThisBarTender As New  Inject
 
+        ' Group of methods (Talking)
         Private    ThisTalking As      ITalk       = ThisBarTender.Talk
         Public         Talking As New  Talking     ( ThisTalking )
 
+        ' Group of methods (Moving)
         Private     ThisMoving As      IMove       = ThisBarTender.Move
         Public          Moving As New  Moving      ( ThisMoving )
 
-        Private ThisProperties As      IProperties = ThisBarTender.Properties
-
-            Public Property Properties() As InjProperties
-                Get
-                    Return _properties
-                End Get
-                Set(value As InjProperties)
-                    _properties = value
-                End Set
-            End Property
-                    Private _properties As New InjProperties(ThisProperties)
+        ' Properties
+        Private         ThisProperties As IProperties = ThisBarTender.Properties
+        Public Property   Properties() As InjProperties
 
     End Class
 

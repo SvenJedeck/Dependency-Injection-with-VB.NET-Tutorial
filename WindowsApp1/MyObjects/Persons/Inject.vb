@@ -2,9 +2,9 @@
 
     Public Class Inject
 
-        'Public Function Talk() As ITalk
-        '    Return New STalk
-        'End Function
+        Public Function Talk() As ITalk
+            Return New STalk
+        End Function
 
         Public Function Move() As IMove
             Return New SMove
