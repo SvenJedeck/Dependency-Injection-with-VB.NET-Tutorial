@@ -1,9 +1,7 @@
 ﻿
     Public Class Person
 
-        Private      ThisPerson As New  Inject
-
-        Private ThisMoving As IMove = ThisPerson.Move
-        Public Moving As New Moving(ThisMoving)
+        Private ThisPerson As New Inject
+        Public      Moving As New Moving(ThisPerson.Move)
 
     End Class
