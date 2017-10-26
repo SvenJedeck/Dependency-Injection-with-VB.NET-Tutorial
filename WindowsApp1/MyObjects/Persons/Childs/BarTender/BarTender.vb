@@ -17,8 +17,6 @@
         Private         ThisProperties As IProperties = ThisBarTender.Properties
         Public Property   Properties() As InjProperties
 
-
-
     End Class
 
 End Namespace
