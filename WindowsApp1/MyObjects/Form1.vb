@@ -4,6 +4,7 @@ Imports MyObjects.Persons.Visitor
 Imports VisitorDrinks = MyObjects.Persons.Visitor.ITalk.Drinks
 
     Public Class Form1
+        'master
 
         Private ThisBarTender As New BarTender
         Private ThisVisitor As New Visitor

@@ -14,7 +14,6 @@
             Return New SProperties
         End Function
 
-
     End Class
 
 End Namespace
