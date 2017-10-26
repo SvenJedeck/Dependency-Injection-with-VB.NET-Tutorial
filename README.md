@@ -1,7 +1,7 @@
 ### Welcome to EduDependencyInjection
 This project is a step by step (self-)educational tutorial about "**Dependency Injection with VB**"
 
-### Please take a look at [Wiki](../wiki)
+### Please take a look at [Wiki](https://github.com/SvenJedeck/EduDependencyInjection/wiki)
 
 I try to built this up like a teaching book. Every branch represents a chapter/subchapter. The learning philosophy is to understand the theoretical background on the basis of practice.  
 The wiki is bilingual; once in English, once in German.
