@@ -1,5 +1,5 @@
 ### Welcome to EduDependencyInjection
-This project is a step by step (self-)educational tutorial about Dependency Injection with VB"
+This project is a step by step (self-)educational tutorial about "**Dependency Injection with VB**"
 
 ### Please take a look at [Wiki](../wiki)
 
