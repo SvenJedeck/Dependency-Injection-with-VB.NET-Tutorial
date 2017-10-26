@@ -7,4 +7,4 @@ I try to built this up like a teaching book. Every branch represents a chapter/s
 The wiki is bilingual; once in English, once in German.
 
 ### Inspired 
-Strongly inspired by [Obelink 's](https://github.com/obelink) clear and well - constructed [Repository Part01](https://github.com/obelink/DependencyInjectionVBPart01) on Dependency Injection
+Strongly inspired by [Obelink's](https://github.com/obelink) clear and well - constructed [Repository Part01](https://github.com/obelink/DependencyInjectionVBPart01) on Dependency Injection. Part Two about Inversion of control (IoC) will be done (if it will) in a seperate project.
