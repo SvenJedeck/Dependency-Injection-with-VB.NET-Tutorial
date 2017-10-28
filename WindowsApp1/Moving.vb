@@ -1,4 +1,5 @@
-﻿
+﻿' <Chapter 1.1>
+
     Public Class Moving
     ' Client, the dependend object. Obelink called it in his source 'child'.
  

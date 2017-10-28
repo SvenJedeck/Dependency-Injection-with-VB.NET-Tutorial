@@ -1,4 +1,5 @@
-﻿
+﻿' <Chapter 1.1>
+
     Public Class Inject
 
         Public Function Move() As IMove
