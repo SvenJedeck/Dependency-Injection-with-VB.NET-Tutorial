@@ -1,10 +1,9 @@
 ﻿' <Chapter 1.2>
 
-    Public Class Inject
+    Public Class InjectMan
 
         Public Function Move() As IMove
-            Return New SMove
+            Return New SManMovesToilet
         End Function
 
     End Class
-

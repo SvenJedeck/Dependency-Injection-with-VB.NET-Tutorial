@@ -22,28 +22,40 @@ Partial Class Form1
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.BtnPerson = New System.Windows.Forms.Button()
+        Me.BtnWoman = New System.Windows.Forms.Button()
+        Me.BtnMan = New System.Windows.Forms.Button()
         Me.SuspendLayout
         '
-        'BtnPerson
+        'BtnWoman
         '
-        Me.BtnPerson.Location = New System.Drawing.Point(24, 32)
-        Me.BtnPerson.Name = "BtnPerson"
-        Me.BtnPerson.Size = New System.Drawing.Size(144, 23)
-        Me.BtnPerson.TabIndex = 11
-        Me.BtnPerson.Text = "Person"
-        Me.BtnPerson.UseVisualStyleBackColor = true
+        Me.BtnWoman.Location = New System.Drawing.Point(24, 32)
+        Me.BtnWoman.Name = "BtnWoman"
+        Me.BtnWoman.Size = New System.Drawing.Size(144, 23)
+        Me.BtnWoman.TabIndex = 11
+        Me.BtnWoman.Text = "Woman"
+        Me.BtnWoman.UseVisualStyleBackColor = true
+        '
+        'BtnMan
+        '
+        Me.BtnMan.Location = New System.Drawing.Point(192, 32)
+        Me.BtnMan.Name = "BtnMan"
+        Me.BtnMan.Size = New System.Drawing.Size(144, 23)
+        Me.BtnMan.TabIndex = 12
+        Me.BtnMan.Text = "Man"
+        Me.BtnMan.UseVisualStyleBackColor = true
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(615, 365)
-        Me.Controls.Add(Me.BtnPerson)
+        Me.ClientSize = New System.Drawing.Size(483, 184)
+        Me.Controls.Add(Me.BtnMan)
+        Me.Controls.Add(Me.BtnWoman)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(false)
 
 End Sub
-    Friend WithEvents BtnPerson As Button
+    Friend WithEvents BtnWoman As Button
+    Friend WithEvents BtnMan As Button
 End Class

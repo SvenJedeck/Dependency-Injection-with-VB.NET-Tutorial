@@ -72,10 +72,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InjectMan.vb" />
+    <Compile Include="Man.vb" />
     <Compile Include="Moving.vb" />
-    <Compile Include="SMove.vb" />
-    <Compile Include="Inject.vb" />
-    <Compile Include="Person.vb" />
+    <Compile Include="SManMovesToilet.vb" />
+    <Compile Include="SWomanMovesToilet.vb" />
+    <Compile Include="InjectWoman.vb" />
+    <Compile Include="Woman.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>

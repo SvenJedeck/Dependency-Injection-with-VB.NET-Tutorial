@@ -1,8 +1,8 @@
 ﻿' <Chapter 1.2>
 
-    Public Class Person
+    Public Class Woman
 
-        Private ThisPerson As New Inject
+        Private ThisPerson As New InjectWoman
         Public      Moving As New Moving(ThisPerson.Move)
 
     End Class

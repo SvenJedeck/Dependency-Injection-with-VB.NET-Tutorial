@@ -1,11 +1,11 @@
 ﻿' <Chapter 1.2>
 
-    Public Class SMove
+    Public Class SWomanMovesToilet
 
         Implements IMove
 
         Public Sub GoToToilet() Implements IMove.GoToToilet
-            MsgBox("Person is going to toilet.")
+            MsgBox("Woman is going to toilet.")
         End Sub
 
     End Class
