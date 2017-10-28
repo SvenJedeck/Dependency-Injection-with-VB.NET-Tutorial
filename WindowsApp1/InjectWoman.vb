@@ -2,7 +2,7 @@
 
     Public Class InjectWoman
 
-        Public Function Move() As IMove
+        Public Function Move() As IMoveToToilet
             Return New SWomanMovesToilet
         End Function
 

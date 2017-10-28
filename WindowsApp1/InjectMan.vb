@@ -2,7 +2,7 @@
 
     Public Class InjectMan
 
-        Public Function Move() As IMove
+        Public Function Move() As IMoveToToilet
             Return New SManMovesToilet
         End Function
 

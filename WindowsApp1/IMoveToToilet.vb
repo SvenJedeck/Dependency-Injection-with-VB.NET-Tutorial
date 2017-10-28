@@ -1,6 +1,6 @@
 ﻿' <Chapter 2.1>
 
-    Public Interface IMove
+    Public Interface IMoveToToilet
 
         Sub GoToToilet()
 
