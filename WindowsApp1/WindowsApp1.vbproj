@@ -72,12 +72,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JMan.vb" />
     <Compile Include="Man.vb" />
     <Compile Include="CGoToToilet.vb" />
     <Compile Include="SManGoesToToilet.vb" />
     <Compile Include="SWomanGoesToToilet.vb" />
-    <Compile Include="JWoman.vb" />
+    <Compile Include="JGoToToilet.vb" />
     <Compile Include="Woman.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>

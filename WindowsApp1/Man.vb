@@ -2,7 +2,7 @@
 
       Public Class Man
 
-         Private ThisPerson As New JMan
-         Public  GoToToilet As New CGoToToilet(ThisPerson.GoToToilet)
+         Private ThisPerson As New JGoToToilet
+         Public  GoToToilet As New CGoToToilet(ThisPerson.GoToToilet(JGoToToilet.GoToToiletService.MAN))
 
       End Class
