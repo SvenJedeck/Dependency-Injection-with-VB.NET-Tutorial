@@ -1,16 +1,16 @@
 ﻿' <Chapter 2.1>
 
-    Public Class Form1
+      Public Class Form1
 
         Private   ThisWoman As New Woman() 
         Private     ThisMan As New Man() 
 
         Private Sub BtnWoman_Click() Handles BtnWoman.Click
-            ThisWoman.Moving.GoToToilet()
+            ThisWoman.GoToToilet.Go()
         End Sub
 
         Private Sub BtnMan_Click() Handles BtnMan.Click
-            ThisMan.Moving.GoToToilet()
+            ThisMan.GoToToilet.Go()
         End Sub
 
-End Class
+      End Class

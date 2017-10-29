@@ -72,12 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="InjectMan.vb" />
+    <Compile Include="JMan.vb" />
     <Compile Include="Man.vb" />
-    <Compile Include="MovingToToilet.vb" />
-    <Compile Include="SManMovesToilet.vb" />
-    <Compile Include="SWomanMovesToilet.vb" />
-    <Compile Include="InjectWoman.vb" />
+    <Compile Include="CGoToToilet.vb" />
+    <Compile Include="SManGoesToToilet.vb" />
+    <Compile Include="SWomanGoesToToilet.vb" />
+    <Compile Include="JWoman.vb" />
     <Compile Include="Woman.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -86,7 +86,7 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IMoveToToilet.vb" />
+    <Compile Include="IGoToToilet.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>

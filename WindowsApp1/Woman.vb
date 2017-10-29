@@ -1,8 +1,9 @@
 ﻿' <Chapter 2.1>
 
-    Public Class Woman
+      Public Class Woman
 
-        Private ThisPerson As New InjectWoman
-        Public      Moving As New MovingToToilet(ThisPerson.Move)
+         Private ThisPerson As New JWoman
+         Public  GoToToilet As New CGoToToilet(ThisPerson.GoToToilet)
 
-    End Class
+      End Class
+

@@ -1,8 +1,8 @@
 ﻿' <Chapter 2.1>
 
-    Public Class Man
+      Public Class Man
 
-        Private ThisPerson As New InjectMan
-        Public      Moving As New MovingToToilet(ThisPerson.Move)
+         Private ThisPerson As New JMan
+         Public  GoToToilet As New CGoToToilet(ThisPerson.GoToToilet)
 
-    End Class
+      End Class
