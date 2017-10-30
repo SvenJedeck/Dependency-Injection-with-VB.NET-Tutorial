@@ -1,5 +1,7 @@
 ﻿' <Chapter 3.1>
 
+      Namespace DI
+
       Public Class SGreetGerman
 
         Implements IGreet
@@ -9,3 +11,5 @@
         End Sub
 
       End Class
+
+      End Namespace

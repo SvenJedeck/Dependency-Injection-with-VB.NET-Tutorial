@@ -1,5 +1,7 @@
 ﻿' <Chapter 3.1>
 
+    Namespace DI
+
     Public Class CGreat
  
         Private ReadOnly _greet As IGreet
@@ -14,3 +16,4 @@
 
     End Class
 
+    End Namespace

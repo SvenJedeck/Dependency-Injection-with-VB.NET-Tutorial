@@ -76,6 +76,7 @@
     <Compile Include="DI\SGreetEnglish.vb" />
     <Compile Include="DI\JGreat.vb" />
     <Compile Include="DI\SGreetGerman.vb" />
+    <Compile Include="DI\SimpleInherit\ByInterface\IGoToToilet.vb" />
     <Compile Include="DI\WPersonEnglish.vb" />
     <Compile Include="DI\WPersonGerman.vb" />
     <Compile Include="Form1.vb">
@@ -125,8 +126,6 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DI\SimpleInherit\ByInterface\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

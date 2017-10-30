@@ -1,5 +1,7 @@
 ﻿' <Chapter 3.1>
 
+    Namespace DI
+
     Public Class JGreat
 
         Public Enum Language
@@ -22,3 +24,4 @@
 
     End Class
 
+    End Namespace
