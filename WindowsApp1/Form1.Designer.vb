@@ -22,28 +22,40 @@ Partial Class Form1
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.BtnPerson = New System.Windows.Forms.Button()
+        Me.BtnPersonEnglish = New System.Windows.Forms.Button()
+        Me.BtnPersonGerman = New System.Windows.Forms.Button()
         Me.SuspendLayout
         '
-        'BtnPerson
+        'BtnPersonEnglish
         '
-        Me.BtnPerson.Location = New System.Drawing.Point(24, 32)
-        Me.BtnPerson.Name = "BtnPerson"
-        Me.BtnPerson.Size = New System.Drawing.Size(144, 23)
-        Me.BtnPerson.TabIndex = 11
-        Me.BtnPerson.Text = "Person"
-        Me.BtnPerson.UseVisualStyleBackColor = true
+        Me.BtnPersonEnglish.Location = New System.Drawing.Point(24, 32)
+        Me.BtnPersonEnglish.Name = "BtnPersonEnglish"
+        Me.BtnPersonEnglish.Size = New System.Drawing.Size(144, 23)
+        Me.BtnPersonEnglish.TabIndex = 11
+        Me.BtnPersonEnglish.Text = "English Person: Hello"
+        Me.BtnPersonEnglish.UseVisualStyleBackColor = true
+        '
+        'BtnPersonGerman
+        '
+        Me.BtnPersonGerman.Location = New System.Drawing.Point(24, 64)
+        Me.BtnPersonGerman.Name = "BtnPersonGerman"
+        Me.BtnPersonGerman.Size = New System.Drawing.Size(144, 23)
+        Me.BtnPersonGerman.TabIndex = 12
+        Me.BtnPersonGerman.Text = "German Person: Hello"
+        Me.BtnPersonGerman.UseVisualStyleBackColor = true
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(615, 365)
-        Me.Controls.Add(Me.BtnPerson)
+        Me.Controls.Add(Me.BtnPersonGerman)
+        Me.Controls.Add(Me.BtnPersonEnglish)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(false)
 
 End Sub
-    Friend WithEvents BtnPerson As Button
+    Friend WithEvents BtnPersonEnglish As Button
+    Friend WithEvents BtnPersonGerman As Button
 End Class

@@ -2,12 +2,15 @@
 
     Public Class Form1
 
-        Private ThisPerson As New Person() 
+        Private ThisPersonEnglish As New WPersonEnglish() 
+        Private ThisPersonGerman As New WPersonGerman() 
 
-        Private Sub BtnPerson_Click() Handles BtnPerson.Click
-
-            ThisPerson.Moving.GoToToilet()
-
+        Private Sub BtnPersonEnglish_Click() Handles BtnPersonEnglish.Click
+            ThisPersonEnglish.Greet.SayHello()
         End Sub
 
-    End Class
+        Private Sub BtnPersonGerman_Click() Handles BtnPersonGerman.Click
+            ThisPersonGerman.Greet.SayHello
+        End Sub
+
+End Class
