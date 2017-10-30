@@ -1,7 +1,6 @@
 ﻿' <Chapter 3.0>
 
     Public Class CGreat
-    ' Client, the dependend object. Obelink called it in his source 'child'.
  
         Private ReadOnly _greet As IGreet
 

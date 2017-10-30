@@ -1,6 +1,6 @@
 ﻿' <Chapter 3.0>
 
-Public Class SGreetGerman
+      Public Class SGreetGerman
 
         Implements IGreet
 
@@ -8,4 +8,4 @@ Public Class SGreetGerman
             MsgBox("Hallo, wie geht es ?")
         End Sub
 
-End Class
+      End Class
