@@ -72,13 +72,52 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DI\CGreat.vb" />
-    <Compile Include="DI\SGreetEnglish.vb" />
-    <Compile Include="DI\JGreat.vb" />
-    <Compile Include="DI\SGreetGerman.vb" />
+    <Compile Include="DI\SimpleInherit\ByClient\WGermanWoman.vb" />
+    <Compile Include="DI\SimpleInherit\ByWrapper\CGoToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByWrapper\FrmByWrapperSimpleInherit.Designer.vb">
+      <DependentUpon>FrmByWrapperSimpleInherit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DI\SimpleInherit\ByWrapper\FrmByWrapperSimpleInherit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DI\SimpleInherit\ByWrapper\IGoToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByWrapper\JGoToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByWrapper\SManGoesToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByWrapper\SWomanGoesToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByWrapper\WGermanMan.vb" />
+    <Compile Include="DI\SimpleInherit\CGreat.vb" />
+    <Compile Include="DI\SimpleInherit\Dessert\FrmDessert.Designer.vb">
+      <DependentUpon>FrmDessert.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DI\SimpleInherit\Dessert\FrmDessert.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DI\SimpleInherit\Dessert\WConstructorDynamic.vb" />
+    <Compile Include="DI\SimpleInherit\Dessert\WPropertiesDynamic.vb" />
+    <Compile Include="DI\SimpleInherit\SGreetEnglish.vb" />
+    <Compile Include="DI\SimpleInherit\JGreat.vb" />
+    <Compile Include="DI\SimpleInherit\SGreetGerman.vb" />
+    <Compile Include="DI\SimpleInherit\ByClient\CGoToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByClient\IGoToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByClient\JGoToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByClient\SManGoesToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByClient\SWomanGoesToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByInjector\CGoToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByInjector\FrmInheritByInjector.Designer.vb">
+      <DependentUpon>FrmInheritByInjector.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DI\SimpleInherit\ByInjector\FrmInheritByInjector.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DI\SimpleInherit\ByInjector\IGoToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByInjector\SManGoesToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByInjector\SWomanGoesToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByInjector\WEnglishMan.vb" />
     <Compile Include="DI\SimpleInherit\ByInterface\IGoToToilet.vb" />
-    <Compile Include="DI\WPersonEnglish.vb" />
-    <Compile Include="DI\WPersonGerman.vb" />
+    <Compile Include="DI\SimpleInherit\ByInterface\SManGoesToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\ByInjector\JGoToToilet.vb" />
+    <Compile Include="DI\SimpleInherit\WPersonEnglish.vb" />
+    <Compile Include="DI\SimpleInherit\WPersonGerman.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -86,7 +125,7 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DI\IGreet.vb" />
+    <Compile Include="DI\SimpleInherit\IGreet.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -104,6 +143,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DI\SimpleInherit\ByWrapper\FrmByWrapperSimpleInherit.resx">
+      <DependentUpon>FrmByWrapperSimpleInherit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DI\SimpleInherit\Dessert\FrmDessert.resx">
+      <DependentUpon>FrmDessert.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>

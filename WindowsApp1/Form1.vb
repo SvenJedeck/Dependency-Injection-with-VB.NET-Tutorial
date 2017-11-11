@@ -2,15 +2,14 @@
 
     Public Class Form1
 
-        Private ThisPersonEnglish As New WPersonEnglish() 
-        Private ThisPersonGerman As New WPersonGerman() 
+        Private ThisPersonEnglish As New DI.SimpleInherit.ByInjector.WEnglishMan() 
+        Private ThisPersonGerman As New DI.SimpleInherit.WPersonGerman()
 
-        Private Sub BtnPersonEnglish_Click() Handles BtnPersonEnglish.Click
-            ThisPersonEnglish.Greet.SayHello()
-        End Sub
+    Private Sub BtnByWrapper_Click(sender As Object, e As EventArgs) Handles BtnByWrapper.Click
+        FrmByWrapperSimpleInherit.Show
+    End Sub
 
-        Private Sub BtnPersonGerman_Click() Handles BtnPersonGerman.Click
-            ThisPersonGerman.Greet.SayHello
-        End Sub
-
+    Private Sub BtnDessert_Click(sender As Object, e As EventArgs) Handles BtnDessert.Click
+        FrmDessert.Show
+    End Sub
 End Class

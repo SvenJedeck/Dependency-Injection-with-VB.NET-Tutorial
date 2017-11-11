@@ -22,40 +22,52 @@ Partial Class Form1
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.BtnPersonEnglish = New System.Windows.Forms.Button()
-        Me.BtnPersonGerman = New System.Windows.Forms.Button()
+        Me.BtnByWrapper = New System.Windows.Forms.Button()
+        Me.BtnByClient = New System.Windows.Forms.Button()
+        Me.BtnDessert = New System.Windows.Forms.Button()
         Me.SuspendLayout
         '
-        'BtnPersonEnglish
+        'BtnByWrapper
         '
-        Me.BtnPersonEnglish.Location = New System.Drawing.Point(24, 32)
-        Me.BtnPersonEnglish.Name = "BtnPersonEnglish"
-        Me.BtnPersonEnglish.Size = New System.Drawing.Size(144, 23)
-        Me.BtnPersonEnglish.TabIndex = 11
-        Me.BtnPersonEnglish.Text = "English Person: Hello"
-        Me.BtnPersonEnglish.UseVisualStyleBackColor = true
+        Me.BtnByWrapper.Location = New System.Drawing.Point(24, 160)
+        Me.BtnByWrapper.Name = "BtnByWrapper"
+        Me.BtnByWrapper.Size = New System.Drawing.Size(144, 23)
+        Me.BtnByWrapper.TabIndex = 11
+        Me.BtnByWrapper.Text = "By Wrapper"
+        Me.BtnByWrapper.UseVisualStyleBackColor = true
         '
-        'BtnPersonGerman
+        'BtnByClient
         '
-        Me.BtnPersonGerman.Location = New System.Drawing.Point(24, 64)
-        Me.BtnPersonGerman.Name = "BtnPersonGerman"
-        Me.BtnPersonGerman.Size = New System.Drawing.Size(144, 23)
-        Me.BtnPersonGerman.TabIndex = 12
-        Me.BtnPersonGerman.Text = "German Person: Hello"
-        Me.BtnPersonGerman.UseVisualStyleBackColor = true
+        Me.BtnByClient.Location = New System.Drawing.Point(24, 128)
+        Me.BtnByClient.Name = "BtnByClient"
+        Me.BtnByClient.Size = New System.Drawing.Size(144, 23)
+        Me.BtnByClient.TabIndex = 12
+        Me.BtnByClient.Text = "By Client"
+        Me.BtnByClient.UseVisualStyleBackColor = true
+        '
+        'BtnDessert
+        '
+        Me.BtnDessert.Location = New System.Drawing.Point(24, 192)
+        Me.BtnDessert.Name = "BtnDessert"
+        Me.BtnDessert.Size = New System.Drawing.Size(144, 23)
+        Me.BtnDessert.TabIndex = 13
+        Me.BtnDessert.Text = "Dessert"
+        Me.BtnDessert.UseVisualStyleBackColor = true
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(615, 365)
-        Me.Controls.Add(Me.BtnPersonGerman)
-        Me.Controls.Add(Me.BtnPersonEnglish)
+        Me.Controls.Add(Me.BtnDessert)
+        Me.Controls.Add(Me.BtnByClient)
+        Me.Controls.Add(Me.BtnByWrapper)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(false)
 
 End Sub
-    Friend WithEvents BtnPersonEnglish As Button
-    Friend WithEvents BtnPersonGerman As Button
+    Friend WithEvents BtnByWrapper As Button
+    Friend WithEvents BtnByClient As Button
+    Friend WithEvents BtnDessert As Button
 End Class

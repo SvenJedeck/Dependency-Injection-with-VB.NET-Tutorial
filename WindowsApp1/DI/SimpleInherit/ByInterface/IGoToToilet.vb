@@ -4,9 +4,9 @@
 
     Public Interface IGoToToilet
 
-        Inherits DI.IGreet 
+        Inherits DI.SimpleInherit.IGreet
 
-   
+        Sub Go()
 
     End Interface
 

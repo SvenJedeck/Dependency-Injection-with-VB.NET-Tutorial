@@ -1,6 +1,6 @@
 ﻿' <Chapter 3.1>
 
-    Namespace DI
+    Namespace DI.SimpleInherit
 
     Public Class JGreat
 
